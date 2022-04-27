@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!--Page Title-->
+  <title>Title</title>
+  <!--SEO-->
+  <meta name="description" content="Description">
+  <meta name="keywords" content="keyword1, keyword2">
+  <!--Additional meta tags-->
+  <meta name="msthemecompatible" content="no">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <!--Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+  <link rel="manifest" href="./favicons/site.webmanifest">
+  <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./favicons/favicon.ico">
+  <link href="VELOSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="VELOSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link id="app-css" rel="stylesheet" href="./assets/styles/app.min.css">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!--Styles-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');
+    if (!('ontouchstart' in document.documentElement)) {
+      document.documentElement.className += ' no-touchevents';
+    } else {
+      document.documentElement.className += ' touchevents';
+    }
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <div class="no-js-warning">Для корректной работы сайта <b>включите JavaScript</b> в браузере</div>
+  </noscript>
+  <div id="confirm">
+    <div class="container">
+      <div class="confirm">
+        <h2 class="confirm-title">
+          ИЩЕТЕ ЧТО-ТО НОВОЕ?
+        </h2>
+        <div class="confirm-question">
+          Вам уже исполнилось 18 лет?
+        </div>
+        <div class="confirm-btn__block">
+          <a href="#" class="confirm-btn confirm-btn__open">Да</a>
+          <a href="https://google.com" class="confirm-btn">Нет</a>
+        </div>
+        <div class="confirm-warn">
+          На сайте содержится информация о никотиносодержащих продуктах.
+        </div>
+        <div class="confirm-cookie">
+          Сайт использует файлы cookies. Если согласны, продолжайте пользоваться сайтом. Более подробно об этом можно узнать в Политике Cookies.
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <div class="header">
+        <div class="header-logo">
+          <a href="/" class="header-logo__link">
+            <img src="assets/images/logoHeader.svg" alt="Velo">
+          </a>
+        </div>
+        <nav class="navbar">
+          <a href="#" class="nav-link">НАШИ ПРОДУКТЫ</a>
+          <a href="#" class="nav-link">VELO ЛЕНТА</a>
+          <a href="#" class="nav-link">КАРТА МАГАЗИНОВ</a>
+          <a href="#" class="nav-link">FAQ</a>
+          <a href="#" class="nav-link">СВЯЗАТЬСЯ</a>
+        </nav>
+        <div class="header-btns__block">
+          <div class="header-btn">
+            <a href="tel:88011000841" class="btn-link">
+              <img src="assets/images/phone.svg" alt="Velo">
+            </a>
+          </div>
+          <div class="burger">
+            <img src="assets/images/mob-menu.svg" alt="Velo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="popup popup-menu">
+    <nav class="mobile-navbar">
+      <a href="#" class="nav-link">НАШИ ПРОДУКТЫ</a>
+      <a href="#" class="nav-link">VELO ЛЕНТА</a>
+      <a href="#" class="nav-link">КАРТА МАГАЗИНОВ</a>
+      <a href="#" class="nav-link">FAQ</a>
+      <a href="#" class="nav-link">СВЯЗАТЬСЯ</a>
+    </nav>
+  </div>
+  <div id="main-bg">
+    <div class="top-block">
+      <div class="main-bg__position last-screen__ice-top_block">
+        <img src="assets/images/main-bg/lastScreen/ice-top.png" alt="velo">
+      </div>
+      <div class="main-bg__position last-screen__ice-bottom_block">
+        <img src="assets/images/main-bg/lastScreen/ice-bottom.png" alt="velo">
+      </div>
+      <div class="last-screen__triangle">
+        <img src="assets/images/main-bg/lastScreen/triangle.png" alt="velo">
+      </div>
+      <div class="last-screen__text">
+        <img src="assets/images/main-bg/lastScreen/text.svg" alt="velo">
+      </div>
+      <div class="first-screen__bigIce1">
+        <img src="assets/images/main-bg/firstScreen/bigIce1.png" alt="velo">
+      </div>
+      <div class="first-screen__bigIce2">
+        <img src="assets/images/main-bg/firstScreen/bigIce2.png" alt="velo">
+      </div>
+      <div class="main-bg__position jar-block">
+        <img src="assets/images/main-bg/lastScreen/jar.png" alt="velo">
+      </div>
+      <div class="first-screen__ice9">
+        <img src="assets/images/main-bg/firstScreen/ice9.png" alt="velo">
+      </div>
+      <div class="first-screen__ice7">
+        <img src="assets/images/main-bg/firstScreen/ice7.png" alt="velo">
+      </div>
+      <div class="first-screen__ice1">
+        <img src="assets/images/main-bg/firstScreen/ice1.png" alt="velo">
+      </div>
+      <div class="first-screen__ice10">
+        <img src="assets/images/main-bg/firstScreen/ice10.png" alt="velo">
+      </div>
+      <div class="first-screen__ice8">
+        <img src="assets/images/main-bg/firstScreen/ice8.png" alt="velo">
+      </div>
+      <div class="first-screen__ice3">
+        <img src="assets/images/main-bg/firstScreen/ice3.png" alt="velo">
+      </div>
+      <div class="first-screen__ice2">
+        <img src="assets/images/main-bg/firstScreen/ice2.png" alt="velo">
+      </div>
+      <div class="first-screen__ice6">
+        <img src="assets/images/main-bg/firstScreen/ice6.png" alt="velo">
+      </div>
+      <div class="first-screen__ice5">
+        <img src="assets/images/main-bg/firstScreen/ice5.png" alt="velo">
+      </div>
+      <div class="first-screen__ice4">
+        <img src="assets/images/main-bg/firstScreen/ice4.png" alt="velo">
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <div id="new-taste">
+      <div class="container">
+        <div class="new-taste">
+          <div class="new-taste__item">
+            <div class="title-top__block">
+              <div class="jar-description__block">
+                <h1 class="title jar-title">
+                  VELO <br> Green Fusion Strong
+                </h1>
+                <div class="jar-subtitle">
+                  новый вкус зимних приключений
+                </div>
+                <div class="jar-description">
+                  <div class="taste">
+                    Вкус:
+                    <span class="product-taste">
+                      Зимние специи
+                    </span>
+                  </div>
+                  <div class="streight">
+                    Крепость:
+                    <span class="product-streight">
+                      10мг/пауч*
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="new-taste__item">
+            <div class="new-taste__item__text">
+              <div class="subtitle-top">
+                Готов к горячей новинке?
+              </div>
+              <h1 class="title-top">
+                ЗИМА НИКОГДА <br> НЕ БУДЕТ ПРЕЖНЕЙ!
+              </h1>
+            </div>
+            <div class="new-tast__img">
+              <img src="assets/images/new-taste.png" alt="Velo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="inside-velo">
+      <div class="container">
+        <div class="inside-velo">
+          <h1 class="title inside-velo__title">
+            Что внутри <span>velo</span>?
+          </h1>
+          <div class="inside-velo__wrapper swiper">
+            <div class="swiper-wrapper">
+              <div class="inside-velo__img swiper-slide">
+                <div class="inside-velo-img-item1">
+                  <svg width="193" height="193" viewBox="0 0 123 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="red" clip-rule="evenodd" d="M61.9864 3.90523C30.4539 3.90523 4.80278 29.4673 4.69313 60.9996C4.58348 92.532 30.0568 118.094 61.5893 118.094C93.1219 118.094 118.773 92.532 118.883 60.9996C118.992 29.4673 93.519 3.90523 61.9864 3.90523ZM0.787881 60.9996C0.905031 27.3105 28.3106 0 62 0C95.6894 0 122.905 27.3105 122.788 60.9996C122.671 94.6888 95.2651 121.999 61.5758 121.999C27.8864 121.999 0.670732 94.6888 0.787881 60.9996Z" fill="#80C7EA" />
+                    <path fill-rule="red" clip-rule="evenodd" d="M31.336 47.3731C31.5578 46.9891 31.9674 46.7527 32.4106 46.7527H59.9888C60.432 46.7527 60.8416 46.9891 61.0633 47.3731L74.8648 71.2637C75.0868 71.648 75.0869 72.1216 74.8651 72.5059L61.0636 96.4214C60.8419 96.8056 60.4322 97.0423 59.9888 97.0423H32.4106C31.9672 97.0423 31.5575 96.8056 31.3358 96.4214L17.5343 72.5059C17.3125 72.1216 17.3126 71.648 17.5345 71.2637L31.336 47.3731ZM33.1268 49.2361L20.0425 71.8854L33.1272 94.5588H59.2722L72.3569 71.8854L59.2726 49.2361H33.1268Z" fill="#80C7EA" />
+                    <path fill-rule="red" clip-rule="evenodd" d="M84.037 32.7712C84.2586 32.3868 84.6685 32.1499 85.1121 32.1499H98.9136C99.3572 32.1499 99.7671 32.3868 99.9888 32.7712L106.89 44.7414C107.111 45.1257 107.111 45.599 106.889 45.9831L99.9882 57.9285C99.7664 58.3124 99.3568 58.5488 98.9136 58.5488H85.1121C84.6689 58.5488 84.2593 58.3124 84.0376 57.9285L77.1368 45.9831C76.9149 45.599 76.9147 45.1257 77.1363 44.7414L84.037 32.7712ZM85.8291 34.6333L79.6445 45.3611L85.8283 56.0654H98.1974L104.381 45.3611L98.1967 34.6333H85.8291Z" fill="#80C7EA" />
+                    <path fill-rule="red" clip-rule="evenodd" d="M81.3665 51.4154C81.7126 52.0074 81.5135 52.7679 80.9218 53.1142L67.7657 60.8128C67.1741 61.1591 66.4138 60.9599 66.0678 60.3679C65.7217 59.7759 65.9208 59.0154 66.5125 58.6691L79.6686 50.9705C80.2603 50.6243 81.0205 50.8235 81.3665 51.4154Z" fill="#80C7EA" />
+                  </svg>
+                </div>
+              </div>
+              <div class="inside-velo__img swiper-slide">
+                <div class="inside-velo-img-item2">
+                  <svg width="193" height="193" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M81.418 26.8783L82.4776 26.1305L82.488 26.1458L82.5169 26.1882L82.6277 26.3518C82.7243 26.4948 82.8653 26.7047 83.0445 26.9738C83.4027 27.512 83.9136 28.2878 84.5262 29.2409C85.7508 31.1462 87.3855 33.7658 89.0221 36.6184C90.6562 39.4666 92.3052 42.5695 93.5495 45.4369C94.7705 48.2508 95.687 51.0239 95.687 53.1439C95.687 61.146 89.3183 67.6251 81.4449 67.6398C81.1451 66.7772 80.8103 65.888 80.4457 64.9781C80.7663 65.0049 81.0906 65.0185 81.418 65.0185C87.8787 65.0185 93.1067 59.7074 93.1067 53.1439C93.1067 51.6204 92.4009 49.2884 91.1884 46.4943C89.9992 43.7538 88.4034 40.7456 86.7928 37.9384C85.1847 35.1354 83.5747 32.5551 82.3657 30.6741C82.0118 30.1234 81.6925 29.6331 81.418 29.2153C81.1436 29.6331 80.8243 30.1234 80.4703 30.6741C79.2614 32.5551 77.6514 35.1354 76.0432 37.9384C74.4326 40.7456 72.8369 43.7538 71.6477 46.4943C71.5634 46.6885 71.4816 46.8805 71.4022 47.0701C70.8611 46.1346 70.3212 45.2149 69.7873 44.3169C70.9559 41.7735 72.3906 39.0993 73.814 36.6184C75.4506 33.7658 77.0853 31.1462 78.3098 29.2409C78.9225 28.2878 79.4334 27.512 79.7916 26.9738C79.9708 26.7047 80.1118 26.4948 80.2084 26.3518L80.3191 26.1882L80.348 26.1458L80.3585 26.1305L81.418 26.8783ZM81.418 26.8783C82.4776 26.1305 82.4774 26.1302 82.4776 26.1305C82.2364 25.7779 81.8406 25.5676 81.418 25.5676C80.9954 25.5676 80.5996 25.7779 80.3585 26.1305C80.3587 26.1302 80.3585 26.1305 81.418 26.8783Z" fill="#80C7EA" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M47.3616 52.7861C46.7733 51.6856 46.1656 50.5951 45.56 49.5395C43.9235 46.687 42.2888 44.0673 41.0642 42.1621C40.4515 41.2089 39.9407 40.4332 39.5824 39.895C39.4033 39.6258 39.2622 39.416 39.1656 39.2729L39.0549 39.1094L39.026 39.0669L39.0155 39.0516C38.7744 38.699 38.3786 38.4888 37.956 38.4888C37.5334 38.4888 37.1376 38.699 36.8965 39.0516L36.886 39.0669L36.8571 39.1094L36.7463 39.2729C36.6498 39.416 36.5087 39.6258 36.3296 39.895C35.9713 40.4332 35.4605 41.2089 34.8478 42.1621C33.6232 44.0673 31.9885 46.687 30.3519 49.5395C28.7178 52.3878 27.0689 55.4906 25.8246 58.358C24.6035 61.172 23.687 63.945 23.687 66.0651C23.687 74.0762 30.0703 80.561 37.956 80.561C38.1693 80.561 38.3815 80.5562 38.5925 80.5468C38.4437 79.6916 38.3414 78.8201 38.2883 77.935C38.1779 77.9381 38.0671 77.9397 37.956 77.9397C31.4953 77.9397 26.2673 72.6285 26.2673 66.0651C26.2673 64.5415 26.9732 62.2095 28.1856 59.4154C29.3749 56.6749 30.9706 53.6668 32.5812 50.8595C34.1893 48.0566 35.7993 45.4762 37.0083 43.5952C37.3623 43.0445 37.6816 42.5542 37.956 42.1364C38.2304 42.5542 38.5497 43.0445 38.9037 43.5952C40.1127 45.4762 41.7227 48.0566 43.3308 50.8595C44.2064 52.3856 45.0775 53.9711 45.8814 55.5407C46.3661 54.62 46.8608 53.7001 47.3616 52.7861ZM39.0155 39.0516C39.0154 39.0514 39.0155 39.0516 37.956 39.7994L39.0155 39.0516ZM37.956 39.7994C36.8965 39.0516 36.8966 39.0514 36.8965 39.0516L37.956 39.7994Z" fill="#80C7EA" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.9071 28.6987L59.8481 29.4473L58.789 28.6987C59.0302 28.3466 59.4258 28.1366 59.8481 28.1366C60.2704 28.1366 60.6659 28.3466 60.9071 28.6987ZM59.8481 31.7708C59.2378 32.6877 58.3926 33.9713 57.3881 35.5321C55.272 38.8199 52.4525 43.3327 49.6349 48.2376C46.8148 53.1468 44.0096 58.4264 41.9133 63.2521C39.7938 68.1312 38.4833 72.3619 38.4833 75.2417C38.4833 87.2313 48.0462 96.9463 59.8481 96.9463C71.6499 96.9463 81.2128 87.2313 81.2128 75.2417C81.2128 72.3619 79.9024 68.1312 77.7828 63.2521C75.6865 58.4264 72.8813 53.1468 70.0613 48.2376C67.2437 43.3327 64.4242 38.8199 62.3081 35.5321C61.3035 33.9713 60.4583 32.6877 59.8481 31.7708ZM80.1435 62.1937C82.2717 67.0929 83.7931 71.7649 83.7931 75.2417C83.7931 88.679 73.075 99.5676 59.8481 99.5676C46.6212 99.5676 35.903 88.679 35.903 75.2417C35.903 71.7649 37.4244 67.0929 39.5527 62.1937C41.7042 57.241 44.5627 51.8666 47.4063 46.9164C50.2525 41.9618 53.0967 37.4097 55.2284 34.0976C56.2947 32.4409 57.1835 31.0931 57.8063 30.1587C58.1178 29.6914 58.3628 29.3274 58.5302 29.0798L58.7219 28.7971L58.7715 28.7243L58.789 28.6987C58.789 28.6987 58.789 28.6987 59.8481 29.4473C60.9071 28.6987 60.9071 28.6987 60.9071 28.6987L60.9246 28.7243L60.9742 28.7971L61.1659 29.0798C61.3334 29.3274 61.5784 29.6914 61.8898 30.1587C62.5126 31.0931 63.4015 32.4409 64.4677 34.0976C66.5994 37.4097 69.4437 41.9618 72.2898 46.9164C75.1335 51.8666 77.992 57.241 80.1435 62.1937Z" fill="#80C7EA" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.987 3.90523C29.4544 3.90523 3.80704 29.4673 3.70195 60.9997C3.59686 92.5321 29.0739 118.094 60.6064 118.094C92.139 118.094 117.786 92.5321 117.891 60.9997C117.997 29.4673 92.5195 3.90523 60.987 3.90523ZM-0.203299 60.9997C-0.0910203 27.3105 27.3106 0 61 0C94.6894 0 121.909 27.3105 121.797 60.9997C121.684 94.6889 94.2828 121.999 60.5934 121.999C26.904 121.999 -0.315579 94.6889 -0.203299 60.9997Z" fill="#80C7EA" />
+                  </svg>
+                </div>
+              </div>
+              <div class="inside-velo__img swiper-slide">
+                <div class="inside-velo-img-item3">
+                  <svg width="193" height="193" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M102 29.29L86.9979 70.7332L31.0412 84.5002L29.098 94L25.3954 93.2404L27.8183 81.3957L84.1334 67.5404L98.4468 28L102 29.29ZM83.4921 38.8677L77.611 60.736L24.517 77.8175L22.7068 86.927L19 86.1883L21.2441 74.895L74.4965 57.7625L79.8426 37.8834L83.4921 38.8677Z" fill="#80C7EA" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M58.2413 31.0304L57.3889 30.5376L56.5365 31.0304L56.8206 31.5233L56.444 32.1765L57.2964 32.6694L57.3889 32.5089L57.4814 32.6694L58.3338 32.1765L57.9572 31.5233L58.2413 31.0304ZM54.8317 32.0161L55.7766 33.655L54.0718 34.6407L53.127 33.0018L54.8317 32.0161ZM51.4222 33.9874L52.3671 35.6264L50.6623 36.612L49.7174 34.9731L51.4222 33.9874ZM48.0127 35.9588L48.9575 37.5977L47.2528 38.5834L46.3079 36.9444L48.0127 35.9588ZM44.6031 37.9301L42.8983 38.9158L43.8432 40.5547L45.548 39.569L44.6031 37.9301ZM41.1936 39.9014L39.4888 40.8871L40.4337 42.526L42.1384 41.5404L41.1936 39.9014ZM37.784 41.8728L36.0793 42.8584L37.0241 44.4974L38.7289 43.5117L37.784 41.8728ZM34.3745 43.8441L32.6697 44.8298L33.6146 46.4687L35.3194 45.4831L34.3745 43.8441ZM30.1125 76.864H30.6808L31.0574 76.2107L31.9098 76.7036L31.8173 76.864H32.0023V77.8497H31.2491L30.9649 78.3425L30.1125 77.8497V76.864ZM32.6697 79.3282L34.3745 80.3138L35.3194 78.6749L33.6146 77.6892L32.6697 79.3282ZM36.0793 81.2995L37.784 82.2852L38.7289 80.6462L37.0241 79.6606L36.0793 81.2995ZM39.4888 83.2708L41.1936 84.2565L42.1384 82.6176L40.4337 81.6319L39.4888 83.2708ZM42.8983 85.2422L44.6031 86.2278L45.548 84.5889L43.8432 83.6032L42.8983 85.2422ZM46.3079 87.2135L48.0127 88.1992L48.9575 86.5602L47.2528 85.5746L46.3079 87.2135ZM49.7174 89.1848L51.4222 90.1705L52.3671 88.5316L50.6623 87.5459L49.7174 89.1848ZM53.127 91.1562L54.8317 92.1418L55.7766 90.5029L54.0718 89.5172L53.127 91.1562ZM56.5365 93.1275L57.3889 93.6204L58.2413 93.1275L57.9572 92.6347L58.3338 91.9814L57.4814 91.4886L57.3889 91.649L57.2964 91.4886L56.444 91.9814L56.8206 92.6347L56.5365 93.1275ZM59.9461 92.1418L61.6508 91.1562L60.7059 89.5172L59.0012 90.5029L59.9461 92.1418ZM63.3556 90.1705L65.0604 89.1848L64.1155 87.5459L62.4107 88.5316L63.3556 90.1705ZM66.7651 88.1992L68.4699 87.2135L67.525 85.5746L65.8203 86.5602L66.7651 88.1992ZM70.1747 86.2278L71.8795 85.2422L70.9346 83.6032L69.2298 84.5889L70.1747 86.2278ZM73.5842 84.2565L75.289 83.2708L74.3441 81.6319L72.6394 82.6176L73.5842 84.2565ZM76.9938 82.2852L78.6985 81.2995L77.7537 79.6606L76.0489 80.6462L76.9938 82.2852ZM80.4033 80.3138L82.1081 79.3282L81.1632 77.6892L79.4584 78.6749L80.4033 80.3138ZM84.6652 47.294H84.097L83.7204 47.9472L82.868 47.4544L82.9605 47.294H82.7755V46.3083H83.5287L83.8129 45.8155L84.6652 46.3083V47.294ZM82.1081 44.8298L80.4033 43.8441L79.4584 45.4831L81.1632 46.4687L82.1081 44.8298ZM78.6985 42.8584L76.9938 41.8728L76.0489 43.5117L77.7537 44.4974L78.6985 42.8584ZM75.289 40.8871L73.5842 39.9014L72.6394 41.5404L74.3441 42.526L75.289 40.8871ZM71.8795 38.9158L70.1747 37.9301L69.2298 39.569L70.9346 40.5547L71.8795 38.9158ZM68.4699 36.9444L67.525 38.5834L65.8203 37.5977L66.7651 35.9588L68.4699 36.9444ZM65.0604 34.9731L64.1155 36.612L62.4107 35.6264L63.3556 33.9874L65.0604 34.9731ZM61.6508 33.0018L60.7059 34.6407L59.0012 33.655L59.9461 32.0161L61.6508 33.0018ZM84.6652 49.2653H82.7755V51.2366H84.6652V49.2653ZM84.6652 53.208H82.7755V55.1793H84.6652V53.208ZM84.6652 57.1506H82.7755V59.122H84.6652V57.1506ZM84.6652 61.0933H82.7755V63.0646H84.6652V61.0933ZM84.6652 65.036H82.7755V67.0073H84.6652V65.036ZM84.6652 68.9787H82.7755V70.95H84.6652V68.9787ZM84.6652 72.9213H82.7755V74.8927H84.6652V72.9213ZM84.6652 76.864H84.097L83.7204 76.2107L82.868 76.7036L82.9605 76.864H82.7755V77.8497H83.5287L83.8129 78.3425L84.6652 77.8497V76.864ZM30.1125 74.8927H32.0023V72.9213H30.1125V74.8927ZM30.1125 70.95H32.0023V68.9787H30.1125V70.95ZM30.1125 67.0073H32.0023V65.036H30.1125V67.0073ZM30.1125 63.0646H32.0023V61.0933H30.1125V63.0646ZM30.1125 59.122H32.0023V57.1506H30.1125V59.122ZM30.1125 55.1793H32.0023V53.208H30.1125V55.1793ZM30.1125 51.2366H32.0023V49.2653H30.1125V51.2366ZM30.1125 47.294H30.6808L31.0574 47.9472L31.9098 47.4544L31.8173 47.294H32.0023V46.3083H31.2491L30.9649 45.8155L30.1125 46.3083V47.294Z" fill="#80C7EA" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.987 3.90523C29.4544 3.90523 3.80704 29.4673 3.70195 60.9997C3.59686 92.5321 29.0739 118.094 60.6064 118.094C92.139 118.094 117.786 92.5321 117.891 60.9997C117.997 29.4673 92.5195 3.90523 60.987 3.90523ZM-0.203299 60.9997C-0.0910203 27.3105 27.3106 0 61 0C94.6894 0 121.909 27.3105 121.797 60.9997C121.684 94.6889 94.2828 121.999 60.5934 121.999C26.904 121.999 -0.315579 94.6889 -0.203299 60.9997Z" fill="#80C7EA" />
+                  </svg>
+                </div>
+              </div>
+              <div class="inside-velo__img swiper-slide">
+                <div class="inside-velo-img-item4">
+                  <svg width="193" height="193" viewBox="0 0 123 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M62.2489 28.1449L61.3625 27.627L60.4762 28.1449L60.7716 28.6629L60.38 29.3496L61.2664 29.8675L61.3625 29.6989L61.4587 29.8675L62.345 29.3496L61.9534 28.6629L62.2489 28.1449ZM58.7035 29.1809L59.6861 30.9035L57.9134 31.9395L56.9309 30.2169L58.7035 29.1809ZM55.1582 31.2529L56.1407 32.9755L54.3681 34.0115L53.3856 32.2889L55.1582 31.2529ZM51.6129 33.3249L52.5954 35.0475L50.8228 36.0835L49.8403 34.3609L51.6129 33.3249ZM48.0676 35.3968L46.2949 36.4328L47.2774 38.1554L49.0501 37.1194L48.0676 35.3968ZM44.5223 37.4688L42.7496 38.5048L43.7321 40.2274L45.5048 39.1914L44.5223 37.4688ZM40.977 39.5408L39.2043 40.5768L40.1868 42.2994L41.9595 41.2634L40.977 39.5408ZM37.4316 41.6128L35.659 42.6487L36.6415 44.3713L38.4142 43.3354L37.4316 41.6128ZM33 76.3183H33.5909L33.9825 75.6316L34.8688 76.1496L34.7727 76.3183H34.965V77.3542H34.1818L33.8863 77.8722L33 77.3542V76.3183ZM35.659 78.9082L37.4316 79.9442L38.4142 78.2216L36.6415 77.1856L35.659 78.9082ZM39.2043 80.9802L40.977 82.0162L41.9595 80.2936L40.1868 79.2576L39.2043 80.9802ZM42.7496 83.0522L44.5223 84.0882L45.5048 82.3655L43.7321 81.3296L42.7496 83.0522ZM46.2949 85.1241L48.0676 86.1601L49.0501 84.4375L47.2774 83.4015L46.2949 85.1241ZM49.8403 87.1961L51.6129 88.2321L52.5954 86.5095L50.8228 85.4735L49.8403 87.1961ZM53.3856 89.2681L55.1582 90.3041L56.1407 88.5815L54.3681 87.5455L53.3856 89.2681ZM56.9309 91.34L58.7035 92.376L59.6861 90.6534L57.9134 89.6174L56.9309 91.34ZM60.4762 93.412L61.3625 93.93L62.2489 93.412L61.9534 92.894L62.345 92.2074L61.4587 91.6894L61.3625 91.858L61.2664 91.6894L60.38 92.2074L60.7716 92.894L60.4762 93.412ZM64.0215 92.376L65.7942 91.34L64.8117 89.6174L63.039 90.6534L64.0215 92.376ZM67.5668 90.3041L69.3395 89.2681L68.357 87.5455L66.5843 88.5815L67.5668 90.3041ZM71.1122 88.2321L72.8848 87.1961L71.9023 85.4735L70.1296 86.5095L71.1122 88.2321ZM74.6575 86.1601L76.4301 85.1241L75.4476 83.4015L73.675 84.4375L74.6575 86.1601ZM78.2028 84.0882L79.9755 83.0522L78.9929 81.3296L77.2203 82.3655L78.2028 84.0882ZM81.7481 82.0162L83.5208 80.9802L82.5383 79.2576L80.7656 80.2936L81.7481 82.0162ZM85.2934 79.9442L87.0661 78.9082L86.0836 77.1856L84.3109 78.2216L85.2934 79.9442ZM89.7251 45.2387H89.1342L88.7426 45.9253L87.8562 45.4073L87.9524 45.2387H87.7601V44.2027H88.5433L88.8387 43.6847L89.7251 44.2027V45.2387ZM87.0661 42.6487L85.2934 41.6128L84.3109 43.3354L86.0836 44.3713L87.0661 42.6487ZM83.5208 40.5768L81.7481 39.5408L80.7656 41.2634L82.5383 42.2994L83.5208 40.5768ZM79.9755 38.5048L78.2028 37.4688L77.2203 39.1914L78.9929 40.2274L79.9755 38.5048ZM76.4301 36.4328L74.6575 35.3968L73.675 37.1194L75.4476 38.1554L76.4301 36.4328ZM72.8848 34.3609L71.9023 36.0835L70.1296 35.0475L71.1122 33.3249L72.8848 34.3609ZM69.3395 32.2889L68.357 34.0115L66.5843 32.9755L67.5668 31.2529L69.3395 32.2889ZM65.7942 30.2169L64.8117 31.9395L63.039 30.9035L64.0215 29.1809L65.7942 30.2169ZM89.7251 47.3107H87.7601V49.3826H89.7251V47.3107ZM89.7251 51.4546H87.7601V53.5266H89.7251V51.4546ZM89.7251 55.5986H87.7601V57.6705H89.7251V55.5986ZM89.7251 59.7425H87.7601V61.8145H89.7251V59.7425ZM89.7251 63.8864H87.7601V65.9584H89.7251V63.8864ZM89.7251 68.0304H87.7601V70.1023H89.7251V68.0304ZM89.7251 72.1743H87.7601V74.2463H89.7251V72.1743ZM89.7251 76.3183H89.1342L88.7426 75.6316L87.8562 76.1496L87.9524 76.3183H87.7601V77.3542H88.5433L88.8387 77.8722L89.7251 77.3542V76.3183ZM33 74.2463H34.965V72.1743H33V74.2463ZM33 70.1023H34.965V68.0304H33V70.1023ZM33 65.9584H34.965V63.8864H33V65.9584ZM33 61.8145H34.965V59.7425H33V61.8145ZM33 57.6705H34.965V55.5986H33V57.6705ZM33 53.5266H34.965V51.4546H33V53.5266ZM33 49.3826H34.965V47.3107H33V49.3826ZM33 45.2387H33.5909L33.9825 45.9253L34.8688 45.4073L34.7727 45.2387H34.965V44.2027H34.1818L33.8863 43.6847L33 44.2027V45.2387Z" fill="#80C7EA" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M80.0531 42.9845L75.2206 28.2537L78.9504 27L83.1373 39.763L92.7297 29.6819L95.5603 32.4416L85.8842 42.6107L98 46.6325L96.7754 50.4126L82.8419 45.7875L74.7938 54.0547L86.9995 58.081L85.7818 61.8634L71.7106 57.2217L63.8744 65.2713L75.7496 69.3975L74.4737 73.1601L60.8148 68.4142L35.9069 94L33.1076 91.2077L58.0087 65.6289L52.8242 51.3558L56.5128 49.9829L61.0582 62.4964L68.9321 54.4082L64.2158 39.393L67.9611 38.1876L72.05 51.2054L80.0531 42.9845Z" fill="#80C7EA" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M61.987 3.90523C30.4544 3.90523 4.80704 29.4673 4.70195 60.9997C4.59686 92.5321 30.0739 118.094 61.6064 118.094C93.139 118.094 118.786 92.5321 118.891 60.9997C118.997 29.4673 93.5195 3.90523 61.987 3.90523ZM0.796701 60.9997C0.90898 27.3105 28.3106 0 62 0C95.6894 0 122.909 27.3105 122.797 60.9997C122.684 94.6889 95.2828 121.999 61.5934 121.999C27.904 121.999 0.684421 94.6889 0.796701 60.9997Z" fill="#80C7EA" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="use-velo">
+      <div class="container">
+        <div class="use-velo">
+          <h1 class="title use-velo__title">
+            Покрути. <br>
+            Размести. <br>
+            Почувствуй. <br>
+            <span>Использовать просто</span>
+          </h1>
+          <div class="use-velo__list swiper">
+            <div class="swiper-wrapper">
+              <div class="use-velo__list-item swiper-slide">
+                <div class="use-velo__list-item_number">1</div>
+                <img src="assets/images/useVelo1.svg" alt="Velo">
+                <div class="use-velo__list-description">
+                  Расположите 1 пауч (подушечку) под верхней губой
+                </div>
+              </div>
+              <div class="use-velo__list-item swiper-slide">
+                <div class="use-velo__list-item_number">2</div>
+                <img src="assets/images/useVelo2.svg" alt="Velo">
+                <div class="use-velo__list-description">
+                  Покалывание означает, что никотин начал действовать
+                </div>
+              </div>
+              <div class="use-velo__list-item swiper-slide">
+                <div class="use-velo__list-item_number">3</div>
+                <img src="assets/images/useVelo3.svg" alt="Velo">
+                <div class="use-velo__list-description">
+                  Используйте до 30 минут
+                </div>
+              </div>
+              <div class="use-velo__list-item swiper-slide">
+                <div class="use-velo__list-item_number">4</div>
+                <img src="assets/images/useVelo4.svg" alt="Velo">
+                <div class="use-velo__list-description">
+                  Поместите использованный пауч в специальный контейнер в банке
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="filter-block">
+      <div class="container">
+        <div class="filter-block">
+          <div class="title filter-title">
+            <span>Откройте вкусы velo</span> и узнайте, какой подходит вам:
+          </div>
+          <div class="filter-btn__block">
+            <a href="#taste-popup3" class="filter-btn btn open-popup">
+              пробовал velo
+            </a>
+            <a href="#" class="filter-btn btn firstTime">
+              не пробовал velo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="best-velo">
+      <div class="container">
+        <div class="best-velo">
+          <h1 class="best-velo__title">
+            Лучший выбор для тех, <br> кто впервые использует VELO
+          </h1>
+          <div class="best-velo__subtitle">
+            Линейка Medium с крепостью 6 мг в одном пауче** — <br>
+            минимальное содержание никотина среди всей продукции VELO в Беларуси.
+          </div>
+          <div class="velo-goods best-velo-slider swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="velo-goods__item swiper-slide">
+                <div class="velo-good__img">
+                  <img src="assets/images/bestVelo1.png" alt="Velo">
+                </div>
+                <div class="velo-good__title">
+                  VELO polar mint medium
+                </div>
+                <div class="velo-good__streight">
+                  <div class="velo-streight__block">
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight"></div>
+                    <div class="velo-streight"></div>
+                    <span>6 мг в одному пауче**</span>
+                  </div>
+                </div>
+                <div class="velo-good__taste">
+                  Сладкая мята с нотками эвкалипта
+                </div>
+              </div>
+              <div class="velo-goods__item swiper-slide">
+                <div class="velo-good__img">
+                  <img src="assets/images/bestVelo2.png" alt="Velo">
+                </div>
+                <div class="velo-good__title">
+                  VELO berry frost medium
+                </div>
+                <div class="velo-good__streight">
+                  <div class="velo-streight__block">
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight"></div>
+                    <div class="velo-streight"></div>
+                    <span>6 мг в одному пауче**</span>
+                  </div>
+                </div>
+                <div class="velo-good__taste">
+                  Яркий вкус летних ягод
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="velo-description">
+      <div class="container">
+        <div class="velo-description">
+          <span>VELO</span> – ЭТО ИННОВАЦИОННЫЙ СПОСОБ ПОТРЕБЛЕНИЯ НИКОТИНА БЕЗ СИГАРЕТ.
+          <b>VELO СОДЕРЖИТ НА 99% МЕНЬШЕ ТОКСИЧНЫХ ВЕЩЕСТВ, ЧЕМ СИГАРЕТА*</b>
+        </div>
+      </div>
+    </div>
+    <div id="medium-user">
+      <div class="container">
+        <div class="medium-user">
+          <h1 class="velo-goods__title">
+            Рекомендован тем, <br> кто уже знаком с velo
+          </h1>
+          <div class="velo-goods velo-goods-much medium-slider swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="velo-goods__item swiper-slide">
+                <div class="velo-good__img">
+                  <img src="/assets/images/veloProd1.png" alt="Velo">
+                </div>
+                <div class="velo-good__title">
+                  VELO royal purple strong
+                </div>
+                <div class="velo-good__streight">
+                  <div class="velo-streight__block">
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight"></div>
+                    <span>10 мг в одному пауче*</span>
+                  </div>
+                </div>
+                <div class="velo-good__taste">
+                  Cочный виноград
+                </div>
+              </div>
+              <div class="velo-goods__item swiper-slide">
+                <div class="velo-good__img">
+                  <img src="/assets/images/veloProd2.png" alt="Velo">
+                </div>
+                <div class="velo-good__title">
+                  VELO ice cool strong
+                </div>
+                <div class="velo-good__streight">
+                  <div class="velo-streight__block">
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight"></div>
+                    <span>10 мг в одному пауче*</span>
+                  </div>
+                </div>
+                <div class="velo-good__taste">
+                  Ледяная мята
+                </div>
+              </div>
+              <div class="velo-goods__item swiper-slide">
+                <div class="velo-good__img">
+                  <img src="/assets/images/veloProd3.png" alt="Velo">
+                </div>
+                <div class="velo-good__title">
+                  VELO MEADOW FROST X-STRONG
+                </div>
+                <div class="velo-good__streight">
+                  <div class="velo-streight__block">
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <span>10,9 мг в одном пауче*</span>
+                  </div>
+                </div>
+                <div class="velo-good__taste">
+                  Освежающая ягода с травяными нотками
+                </div>
+              </div>
+              <div class="velo-goods__item swiper-slide">
+                <div class="velo-good__img">
+                  <img src="/assets/images/veloProd4.png" alt="Velo">
+                </div>
+                <div class="velo-good__title">
+                  VELO freeze x-strong
+                </div>
+                <div class="velo-good__streight">
+                  <div class="velo-streight__block">
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <span>10,9 мг в одному пауче*</span>
+                  </div>
+                </div>
+                <div class="velo-good__taste">
+                  Морозная мята
+                </div>
+              </div>
+              <div class="velo-goods__item swiper-slide">
+                <div class="velo-good__img">
+                  <img src="/assets/images/veloProd5.png" alt="Velo">
+                </div>
+                <div class="velo-good__title">
+                  velo Tropic Breeze X-Strong
+                </div>
+                <div class="velo-good__streight">
+                  <div class="velo-streight__block">
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <span>10,9 мг в одному пауче*</span>
+                  </div>
+                </div>
+                <div class="velo-good__taste">
+                  Cочный вкус тропических фруктов
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="advanced-user">
+      <div class="container">
+        <div class="advanced-user">
+          <h1 class="velo-goods__title">
+            Подходит для опытных <br> пользователей
+          </h1>
+          <div class="velo-goods velo-goods-much advanced-slider swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="velo-goods__item swiper-slide">
+                <div class="velo-good__img">
+                  <img src="assets/images/advVeloProd1.png" alt="Velo">
+                </div>
+                <div class="velo-good__title">
+                  VELO yellow root ultra
+                </div>
+                <div class="velo-good__streight">
+                  <div class="velo-streight__block">
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight"></div>
+                    <span>15 мг в одному пауче**</span>
+                  </div>
+                </div>
+                <div class="velo-good__taste">
+                  Пряный имбирь
+                </div>
+              </div>
+              <div class="velo-goods__item swiper-slide">
+                <div class="velo-good__img">
+                  <img src="assets/images/advVeloProd2.png" alt="Velo">
+                </div>
+                <div class="velo-good__title">
+                  VELO urban vibe ULTRA
+                </div>
+                <div class="velo-good__streight">
+                  <div class="velo-streight__block">
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight"></div>
+                    <span>15 мг в одному пауче**</span>
+                  </div>
+                </div>
+                <div class="velo-good__taste">
+                  Фруктово-ягодный взрыв
+                </div>
+              </div>
+              <div class="velo-goods__item swiper-slide">
+                <div class="velo-good__img">
+                  <img src="assets/images/advVeloProd3.png" alt="Velo">
+                </div>
+                <div class="velo-good__title">
+                  VELO x-freeze ULTRA
+                </div>
+                <div class="velo-good__streight">
+                  <div class="velo-streight__block">
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight active"></div>
+                    <div class="velo-streight"></div>
+                    <span>15 мг в одном пауче**</span>
+                  </div>
+                </div>
+                <div class="velo-good__taste">
+                  Перечная мята
+                </div>
+              </div>
+              <!-- <div class="velo-goods__item velo-goods__last-slide swiper-slide"></div> -->
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="explanation-block">
+      <div class="explanation-block">
+        <div class="explanation-item">
+          <div class="explanation-item__container">
+            * Этот продукт не исключает риски, содержит никотин, вызывающий привыкание. Сравнение основано на оценке веществ в дыме стандартной эталонной сигареты (с содержанием смолы приблизительно 9 мг) и компонентов, выделяемых во время использования пауча VELO, а именно средних значений 9 основных токсичных веществ, которые Всемирная организация здравоохранения рекомендует сократить в сигаретном дыме.
+          </div>
+        </div>
+        <div class="explanation-item">
+          <div class="explanation-item__container">
+            ** Уровень никотина определяется методом газовой хроматографии. Данный метод основан на международной методике CORESTA 62. Допустимо возможное отклонение уровня содержания никотина в одном пауче на +/-15%.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-triangle"></div>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/images/logo.svg" alt="Velo">
+      </div>
+      <div class="footer-menu">
+        <a href="#" class="footer-link">Контакты</a>
+        <a href="#" class="footer-link">Условия использования сайта</a>
+        <a href="#" class="footer-link">Политика в отношении персональных данных</a>
+        <a href="#" class="footer-link">Политика Cookie</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      © 2019 ИНОСТРАННОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ
+      "БРИТИШ-АМЕРИКАН ТОБАККО ТРЕЙДИНГ КОМПАНИ"
+      УНП 101169738
+    </div>
+  </footer>
+  <div id="age-fixed">
+    <img class="desk" src="assets/images/desk.svg" alt="Velo">
+    <img class="mob" src="assets/images/mob.svg" alt="Velo">
+  </div>
+  <script src="./assets/libs/js/jquery.min.js"></script>
+  <script src="./assets/libs/js/svg4everybody.min.js"></script>
+  <script src="./assets//libs/js/slick.min.js"></script>
+  <script src="./assets/scripts/app.min.js"></script>
+</body>
+
+</html>
